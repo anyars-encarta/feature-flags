@@ -6,10 +6,12 @@ import RandomColor from './components/random-color';
 import TicTactToe from './components/tic-tact-toe';
 import LightDarkMode from './components/light-dark-mode';
 import './App.css';
+import FeatureFlags from './components/feature-flags';
 
 const App = () => {
   return (
     <div className="App">
+      <FeatureFlags />
       <LightDarkMode />
       <TicTactToe />
       <RandomColor />
