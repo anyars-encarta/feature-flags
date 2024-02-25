@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import Accordion from './components/accordion'
+import TabsUse from './components/custom-tabs/tabs-use';
+import TreeViewNavMenu from './components/tree-view-nav-menu/index';
+import menus from './components/tree-view-nav-menu/data';
+import RandomColor from './components/random-color';
+import TicTactToe from './components/tic-tact-toe';
+import LightDarkMode from './components/light-dark-mode';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LightDarkMode />
+      <TicTactToe />
+      <RandomColor />
+      <Accordion />
+      <TreeViewNavMenu menus={menus} />
+      <TabsUse />
     </div>
   );
 }
