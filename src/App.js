@@ -7,7 +7,7 @@ import TicTactToe from './components/tic-tact-toe';
 import LightDarkMode from './components/light-dark-mode';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <LightDarkMode />
