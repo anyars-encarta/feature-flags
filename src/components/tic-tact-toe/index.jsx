@@ -89,7 +89,7 @@ const TicTactToe = () => {
         <Square value={squares[8]} onClick={() => handleClick(8)} />
       </div>
       <h2>{status}</h2>
-      <button type="button" onClick={handleRestart}>Reset</button>
+      <button className="ttc-r-button" type="button" onClick={handleRestart}>Reset</button>
     </div>
   );
 };

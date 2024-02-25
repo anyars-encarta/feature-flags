@@ -1,4 +1,4 @@
-button {
+.rc-button {
   background: #776969;
   font-size: 24px;
   margin-top: 10px;
@@ -7,7 +7,7 @@ button {
   color: #fff;
 }
 
-button:hover {
+.rc-button:hover {
   background: #fff;
   color: #776969;
 }
