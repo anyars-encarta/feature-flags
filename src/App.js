@@ -1,23 +1,13 @@
-import Accordion from './components/accordion'
-import TabsUse from './components/custom-tabs/tabs-use';
-import TreeViewNavMenu from './components/tree-view-nav-menu/index';
-import menus from './components/tree-view-nav-menu/data';
-import RandomColor from './components/random-color';
-import TicTactToe from './components/tic-tact-toe';
-import LightDarkMode from './components/light-dark-mode';
 import './App.css';
-import FeatureFlags from './components/feature-flags';
+import FeatureFlags from './components/feature-flag';
+import FeatureFlagsGlobalState from './components/feature-flag/context';
 
 const App = () => {
   return (
     <div className="App">
-      <FeatureFlags />
-      <LightDarkMode />
-      <TicTactToe />
-      <RandomColor />
-      <Accordion />
-      <TreeViewNavMenu menus={menus} />
-      <TabsUse />
+      <FeatureFlagsGlobalState>
+        <FeatureFlags />
+      </FeatureFlagsGlobalState>
     </div>
   );
 }
