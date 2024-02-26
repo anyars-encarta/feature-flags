@@ -1,0 +1,13 @@
+.rc-button {
+  background: #776969;
+  font-size: 24px;
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.rc-button:hover {
+  background: #fff;
+  color: #776969;
+}
